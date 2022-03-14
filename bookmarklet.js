@@ -1,0 +1,1 @@
+javascript: (function (d, s) { s = d.createElement('script'); s.src = 'https://scrapbox.io/api/code/your-project-name/your-page-title/script.js'; d.body.appendChild(s); })(document)
