@@ -43,4 +43,12 @@ javascript: (function () {
     var lines = h1title + link + mdimage + author + '\n' + pubdata[1] + '\n' + pubdata[2];
     document.getElementById('bookDescription_feature_div').innerHTML = '<textarea style="height:500px">' + lines + '</textarea>';
 
+    navigator.clipboard.writeText(lines)
+        .then(() => {
+        console.log("Text copied to clipboard...")
+    })
+        .catch(err => {
+        console.log('Something went wrong', err);
+    })
+
 })();   
